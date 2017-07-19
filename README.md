@@ -20,6 +20,7 @@ During the first run, all the packages need to be installed. So in the root fold
 ### To enable hot-reload of the application
 Connect the physical device and run `react-native run-android`. In another terminal window, run `react-native start`, in the root folder. This would create a development server that creates incremental builds and deploys them on the device.
 
-Also, once the app has loaded on the device, long press the menu key, and an alert window would open with a bunch of option. Select `Enable Hot Reloading` in the menu. This should now automatically pick up any changes made to the `js` files (which at this point, would be compiled from ts/*.tsx files, if the typescript compiler is being run in the watch mode).
+Also, once the app has loaded on the device, long press the menu key, and an alert window would open with a bunch of option. Select `Enable Hot Reloading` in the menu. This should now automatically pick up any changes made to the `js` files (which at this point, would be compiled from ts/*.tsx files, if the typescript compiler is being run in the watch mode). If hot reloading doesn't work, reinstall the app using `react-native run-android` with `react-native start` still running. This should fix the issue. Now edit `ts/app.tsx` and see the changes live on your device.
 
-
+### Further instructions
+To make the build process easier, use `ts/app.tsx` as the `main` file that exports one single function. This function can then be imported in `index.android.js` or `index.ios.js`. Thus, the `index.*.js` files need not be touched. All new functionality could be added in multiple source files in `ts/` directory.
