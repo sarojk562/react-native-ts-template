@@ -17,7 +17,7 @@
             }
         },
         {
-            "taskName": "ship icons",
+            "taskName": "Ship Icons",
             "type": "shell",
             "command": "yo rn-toolbox:assets --icon ./resources/icon.png",
             "presentation": {
