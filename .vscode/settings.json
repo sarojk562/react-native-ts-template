@@ -15,7 +15,14 @@
         "**/obj/": true,
         "**/.vs/": true,
         "**/.pm2/": true,
-        "**/.ebextensions/": true
+        "**/.ebextensions/": true,
+        "**/.babelrc" : true,
+        "**/.buckconfig" : true,
+        "**/.flowconfig" : true,
+        "**/.gitattributes" : true,
+        "**/yarn.lock" : true,
+        "**/package-lock.json" : true,
+        "**/__tests__" : true
     },
     "typescript.check.tscVersion": true
 }
