@@ -5,6 +5,6 @@
 
 import { AppRegistry } from 'react-native';
 
-import ReactNativeAppTemplate from './js/app';
+import reactNativeTSTemplate from './js/app';
 
-AppRegistry.registerComponent('ReactNativeAppTemplate', () => ReactNativeAppTemplate);
+AppRegistry.registerComponent('reactNativeTSTemplate', () => reactNativeTSTemplate);

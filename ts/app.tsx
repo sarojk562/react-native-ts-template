@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 
 
-export default class ReactNativeAppTemplate extends React.Component {
+export default class reactNativeTSTemplate extends React.Component {
   render() {
     return (
       <View style={styles.container}>

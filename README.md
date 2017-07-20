@@ -32,3 +32,21 @@ To create icons for different platforms, place your icon under resources folder 
 2. `brew install imagemagick`
 3. `Cmd/Ctrl + Shift + P` ~> This will open a task runner. Type `task` and choose `Ship Icons` from the options shown.
 4. Press enter as confirmation of your project name shown and then on asking permission for overwrite type `y` and hit enter.
+
+
+### To change the name of the project along with app build folders for both ios and android
+If you wish you to just change the project name and keep the rest of our app template as it is, do as follows.
+1. Change the `name` property in `package.json` file in `{$ROOT_DIR}`.
+2. Then upgrage the project to make the necessary file and string changes by `react-native upgrade`.
+3. Type `y` for all the consequent questions to change the `newAppName`.
+4. With the above commands new project folders will be created accordingly.
+5. To remove previous project folders of android `rm -rf android/app/src/main/java/com/{oldAppName}`.
+6. To remove previous project folders of ios `rm -rf ios/{oldAppName}*`.
+7. Re-run the task of shipping icons. `Cmd/Ctrl + Shift + P` ~> This will open a task runner. Type `task` and choose `Ship Icons` from the options shown.
+8. Change strings `{oldAppName}` with `{newAppName}` in 3 files.
+    1. `index.android.js`, `index.ios.js` in `{$ROOT_DIR}`.
+        `import {newAppName} from './js/app';`
+        `AppRegistry.registerComponent('{newAppName}', () => {newAppName});`
+    2. `app.tsx` in `{$ROOT_DIR}/ts`.
+        `export default class {newAppName} extends React.Component`
+9. Now everything is set just re-run the build. For instance `react-native run-ios`.
