@@ -30,3 +30,5 @@ To make the build process easier, use `ts/app.tsx` as the `main` file that expor
 To create icons for different platforms, place your icon under resources folder in root directory or replace the existing icon.png with your file. 
 1. `npm install`
 2. `brew install imagemagick`
+3. `Cmd/Ctrl + Shift + P` ~> This will open a task runner. Type `task` and choose `Ship Icons` from the options shown.
+4. Press enter as confirmation of your project name shown and then on asking permission for overwrite type `y` and hit enter.
