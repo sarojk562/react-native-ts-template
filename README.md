@@ -24,3 +24,9 @@ Also, once the app has loaded on the device, long press the menu key, and an ale
 
 ### Further instructions
 To make the build process easier, use `ts/app.tsx` as the `main` file that exports one single function. This function can then be imported in `index.android.js` or `index.ios.js`. Thus, the `index.*.js` files need not be touched. All new functionality could be added in multiple source files in `ts/` directory.
+
+
+### To create icons for different platforms
+To create icons for different platforms, place your icon under resources folder in root directory or replace the existing icon.png with your file. 
+1. `npm install`
+2. `brew install imagemagick`
