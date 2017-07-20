@@ -2,6 +2,7 @@
   "name": "reactNativeTSTemplate",
   "version": "0.0.1",
   "private": true,
+  "author": "Saroj Kaashyap, Pratheek Adidela",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
@@ -13,7 +14,7 @@
     "react": "16.0.0-alpha.12",
     "react-native": "0.46.4",
     "yo": "^2.0.0",
-    "react-native-ts" : "^0.0.1"
+    "react-native-ts": "^0.0.1"
   },
   "devDependencies": {
     "babel-jest": "20.0.3",
