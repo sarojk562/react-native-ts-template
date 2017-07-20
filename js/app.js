@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = require("react");
 const react_native_1 = require("react-native");
-class reactNativeTSTemplate extends React.Component {
+class reactTSAppTemplate extends React.Component {
     render() {
         return (<react_native_1.View style={styles.container}>
         <react_native_1.Text style={styles.welcome}>
@@ -18,7 +18,7 @@ class reactNativeTSTemplate extends React.Component {
       </react_native_1.View>);
     }
 }
-exports.default = reactNativeTSTemplate;
+exports.default = reactTSAppTemplate;
 const styles = react_native_1.StyleSheet.create({
     container: {
         flex: 1,
