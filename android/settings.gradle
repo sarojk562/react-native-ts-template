@@ -1,3 +1,3 @@
-rootProject.name = 'reactTSAppTemplate'
+rootProject.name = 'ReactNativeAppTemplate'
 
 include ':app'
